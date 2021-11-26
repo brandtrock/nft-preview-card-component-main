@@ -12,6 +12,8 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+
     <!-- font-family: 'Outfit', sans-serif; -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +26,25 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      body {
+        background-color: hsl(217, 54%, 11%);
+        color: hsl(215, 51%, 70%);
+        font-family: "Outfit", sans-serif;
+        font-weight: 300;
+      }
+      h1 {
+        color: hsl(0, 0%, 100%);
+        font-size: 22px;
+        font-weight: 600;
+      }
+      hr {
+        clear: both;
+        color: hsl(215, 32%, 27%);
+        margin: 20px 0;
+      }
+      p {
+        font-size: 18px;
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -31,17 +52,82 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+      .card {
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 20px;
+        margin: 0 auto;
+        padding: 25px;
+        width: 300px;
+      }
+      .clock-content {
+        float: right;
+      }
+      .clock-content img {
+        margin-right: 10px;
+        vertical-align: top;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 150px 0;
+      }
+      .creator-content img {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 100px;
+        height: 30px;
+        margin-right: 20px;
+        padding: 1px;
+        vertical-align: middle;
+      }
+      .creator-content span {
+        color: hsl(0, 0%, 100%);
+      }
+      .ethereum-value {
+        color: hsl(178, 100%, 50%);
+        font-weight: 600;
+      }
+      .ethereum-value img {
+        margin-right: 7px;
+        vertical-align: bottom;
+      }
+      .img-equilibrium {
+        border-radius: 10px;
+        height: 300px;
+        width: 300px;
+      }
     </style>
   </head>
   <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <div class="container">
+      <div class="card">
+        <img
+          src="images/image-equilibrium.jpg"
+          alt="Equilibrium"
+          class="img-equilibrium"
+        />
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="ethereum-content">
+          <span class="ethereum-value"
+            ><img src="images/icon-ethereum.svg" />0.041 ETH
+          </span>
+          <span class="clock-content"
+            ><img src="images/icon-clock.svg" />3 days left</span
+          >
+        </div>
+        <hr />
+        <div class="creator-content">
+          <img src="images/image-avatar.png" />Creation of
+          <span>Jules Wyvern</span>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/brandtrock">Brandt Jorgensen</a>.
+      </div>
     </div>
   </body>
 </html>
